@@ -148,5 +148,5 @@ const usoSortTres = [
     if (a.age < b.age) return 1
     return 0
   })
-  console.log("Ejemplo 16: Ordenando una lista de objetos por la edad");
+  console.log("Sort 3: Ordenando una lista de objetos por la edad de mayor a menor.");
   console.log(usoSortTres);
