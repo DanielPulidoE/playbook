@@ -70,7 +70,7 @@ const puntos = [
     {nombre: "Juanito", obtuvo: 750},
     {nombre: "Pancho", obtuvo: 600}
 ]
-const puntosMayorQue500 = puntos.filter((element) => element.obtuvo >= 500)
+const puntosMayorQue500 = puntos.filter((element) => element.obtuvo >= 700)
 console.log("Filter 3: Filtrar una lista por condicional.")
 console.log(puntosMayorQue500);
 //..........................................
@@ -91,7 +91,7 @@ const númerosEvery = [
     'Pancho'
 ]
 const allEvery = númerosEvery.every((name) => typeof name === 'string')
-console.log("Every: Validar elementos de una lista, si todos cumplen con la validación retorna True, de los contrario False.");
+console.log("Every: Validar elementos de una lista, si 'todos' cumplen con la validación retorna True, de los contrario False.");
 console.log("Son todos los nombres 'cadenas' ?: " + allEvery);
 //..........................................
 
@@ -111,7 +111,7 @@ const scores0 = [
     { name: 'Pancho', score: 85}
 ]
 const scoreLessThan = scores0.find((user) => user.score < 85)
-console.log("Find 2: Find en una lista de objetos.");
+console.log("Find 2: 'find' en una lista de objetos.");
 console.log("EL primer nombre con score menor a 85 es: " + scoreLessThan.name);
 //..........................................
 
@@ -122,5 +122,31 @@ console.log("La posición del primer elemento cuya palabra sea mayor a 7 está e
 //..........................................
 
 const booleanosLista = [true, true, false, true]
+const existeTrue = booleanosLista.some((x) => x === false)
+console.log("Some: Uso de 'some' para ver si al menos uno de los elementos es false.");
+console.log("Existe algún 'false' en el arreglo ?: " + existeTrue);
+//..........................................
 
-console.log();
+const usoSort = ['Daniel', 'Reynaldo', 'Pedrito', 'Juanito', 'Pancho']
+console.log("Sort: Uso de 'sort' para ordenar alfabéticamente cadenas de texto.");
+console.log(usoSort.sort());
+//..........................................
+
+const usoSortDos = [9,8, 7, 6, 5, 4, 3, 2, 1]
+console.log("Sort 2: uso de 'sort' con números.");
+console.log(usoSortDos.sort());
+//..........................................
+
+const usoSortTres = [
+    { name: 'Daniel', age: 19 },
+    { name: 'Reynaldo', age: 20 },
+    { name: 'Pedrito', age: 18 },
+    { name: 'Juanito', age: 21 },
+  ]
+  usoSortTres.sort((a, b) => {
+    if (a.age > b.age) return -1
+    if (a.age < b.age) return 1
+    return 0
+  })
+  console.log("Ejemplo 16: Ordenando una lista de objetos por la edad");
+  console.log(usoSortTres);
