@@ -7,4 +7,4 @@
 
 |Y posteriormente elaboré los Ejercicios:|
 |--- |--- |--- |
-| 1. [Ejercicio 1]() | 2. [Ejercicio 2]() | 3. [Ejercicio 3]() |
+| - [Ejercicio 1]() | - [Ejercicio 2]() | - [Ejercicio 3]() |
