@@ -7,4 +7,4 @@
 
 | | | |
 |----|----|----|
-| - [Ejercicio 1]() | - [Ejercicio 2]() | - [Ejercicio 3]() |
+| - [Ejercicio 1](https://github.com/DanielPulidoE/playbook/blob/main/weekly_mission_2/Ejercicio_1.js) | - [Ejercicio 2]() | - [Ejercicio 3]() |
